@@ -1,5 +1,6 @@
 # XDデザインカンプからのコーディング
-クリ★スタさんのXDデザインカンプからコーディングをしました。 （https://crestadesign.org/cording-third/  ）
+クリ★スタさんのXDデザインカンプからコーディングをしました。 
+designed by cresta （https://crestadesign.org/cording-third/  ）
 
 ## 使用言語  
 HTML/CSS(Sass)/JavaScript  
