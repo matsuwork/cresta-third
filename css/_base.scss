@@ -14,7 +14,7 @@
     display: flex;
     justify-content: $justify;
     align-items: $align;
-    gap:$gap;
+    gap:$gap*1px;
     flex-wrap: $wrap;
 }
 @mixin flex-column($justify:center,$align:center,$gap:0,$wrap:nowrap) {
