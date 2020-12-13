@@ -1,0 +1,206 @@
+@import "base";
+
+/* about main */
+.top {
+    height:387px;//51.6vh
+    position:relative;
+
+    @include tablet {
+        height:529px;
+    }
+
+    @include mobile {
+        height:387px;
+    }
+
+    &::before {
+        content:'';
+        position:absolute;
+        right: 0;
+        top: 0;
+        width:56%;
+        height:464px;//60vh
+        background-color: #000;
+        z-index: -1;
+
+        @include tablet {
+            height:615px;
+        }
+
+        @include mobile {
+            height:449px;
+        }
+    }
+
+    &::after {
+        content:'';
+        position:absolute;
+        left: 0;
+        top: 0;
+        width:76%;
+        height:100%;
+        background-image: url('../img/heading-img_about.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    &__wrapper {
+        @extend .wrapper;
+        height:100%;
+        position:relative;
+    }
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        right:32px;
+        transform: translateY(-50%);
+
+        @include tablet{
+            right:4%;
+        }
+
+        &__sub {
+            @include font(20,700,0,20);
+            color: #fff;
+            text-align: left;
+
+            @include tablet {
+                @include font(16,700,63,16);
+            }
+        }
+
+        &__main {
+            @include font(72,800,0,86);
+            color: #fff;
+            text-align: left;
+
+            @include tablet {
+                @include font(52,800,63,63);
+            }
+        }
+    }
+}
+
+.vision {
+    padding-top: 197px;
+    padding-bottom: 60px;
+
+    @include tablet {
+        padding-top: 166px;
+    }
+
+    @include mobile {
+        padding-top: 142px;
+    }
+
+    &__wrapper {
+        @extend .wrapper;
+        max-width: 648px;
+        width:74%;
+
+        @include mobile {
+            width:100%;
+        }
+    }
+
+    &__lead {
+        @include font(24,700,5,24);
+        margin-bottom: 27px;
+    }
+
+    &__text {
+        font-weight: 700;
+        @include tablet {
+            @include font(14,700,0,28);
+        }
+    }
+}
+
+.message {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__img {
+        width:38.2%;
+        max-width: 420px;
+        @include tablet {
+            width: 42.5%;//320px
+        }
+        @include mobile {
+            width: 98.6%;//340px
+            margin-left: -4%;
+        }
+    }
+
+    &__bg {
+        max-width: 770px;
+        width:70%;
+        background-color: #F0F0F0;
+        padding:120px 16% 90px;
+        margin:-138px 0 0 auto;
+
+        @include tablet {
+            padding: 109px 8% 78px;
+            margin:-85px 0 0 auto;
+        }
+
+        @include mobile {
+            width: 100%;
+            padding: 126px 8% 80px;
+            margin:-101px 0 0 auto;
+        }
+    }
+
+    &__text {
+        font-weight: 700;
+        @include mobile {
+            @include font(14,700,0,28);
+        }
+    }
+}
+
+.company {
+    padding-top: 60px;
+    padding-bottom: 120px;
+
+    @include tablet {
+        padding-bottom: 80px;
+    }
+
+    & .heading {
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    &__info {
+        margin:0 0 0 auto;
+        max-width: 800px;
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 40px;
+
+        &__title {
+            font-weight: 800;
+            @include mobile {
+                @include font(14,800,0,28);
+            }
+        }
+
+        &__detail {
+            @include mobile {
+                @include font(14,400,0,28);
+            }
+        }
+    }
+
+    td {
+        border-bottom: 1px solid #DDDDDD;
+        padding:17px 0;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 1100px;
+    }
+}
